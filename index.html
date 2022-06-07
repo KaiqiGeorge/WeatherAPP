@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="current weather">
+        <div class="city">
+          <input type="text" placeholder="Enter a city" class="value" id="city" />
+          <button class="btn btn-primary" id="search">search</button>
+          <button class="btn btn-primary" id="currentLocation">current</button>
+          
+        </div>
+        <h1><br />Beijing</h1>
+        <h2>Mon 9:15pm</h2>
+        <h3 class="weather-description">Sunny</h3>
+        <div class="row" id="weather">
+          <div class="col-8">
+            <span id="icon"><img id="wicon" src="" ></span>
+    
+            <span class="temperature">
+              <span class="temp-number">23</span>
+              <a href="#" class="cel">°C|</a
+              ><a href="#" class="fah">&nbsp;&nbsp;℉</a>
+            
+            </span>
+          </div>
+          <div class="col-4" id="weather details">
+            <span class="humidity">Humidity: 58%</span><br /> <span class="clouds">cloudiness: 2%</span><br /><span class="wind">Wind: 11 m/s</span>;
+          </div>
+        </div>
+       
+      </div>
+      <div class="row" id="weekWeather">
+        <div class="col-2">
+          Friday<br /><br /><img src="src/images/thunder.png" / width="60px"><br /><br />18-29℃
+        </div>
+        <div class="col-2">
+          Saturday<br /><br /><img src="src/images/cloudly new.png" /
+          width="60px"><br /><br />20-25℃
+        </div>
+        <div class="col-2">
+          Sunday<br /><br /><img src="src/images/rainy new.png" /
+          width="60px"><br /><br />20-25℃
+        </div>
+        <div class="col-2">
+          Monday <br /><br /><img src="src/images/cloudly new.png" /
+          width="60px"><br /><br />20-28℃
+        </div>
+        <div class="col-2">
+          Tuesday<br /><br /><img src="src/images/partly cloudy new.png" /
+          width="60px"><br /><br />19-29℃
+        </div>
+        <div class="col-2">
+          Wednesday<br /><br />
+          <img src="src/images/rainy new.png" width="60px" />
+          <br /><br />19-28℃
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+
+  </body>
+</html>
